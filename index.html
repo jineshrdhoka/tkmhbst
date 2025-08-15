@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TKM HBST Volunteers</title>
   
+  <!-- Tailwind CSS for modern styling -->
   <script src="https://cdn.tailwindcss.com"></script>
   
+  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
+  <!-- DataTables CSS for table functionality -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"/>
 
@@ -21,7 +24,6 @@
       background-color: #f1f5f9; /* slate-100 */
     }
     
-    /* Style for DataTables search box and length select */
     .dataTables_wrapper .dataTables_length select,
     .dataTables_wrapper .dataTables_filter input {
       border: 1px solid #cbd5e1; /* slate-300 */
@@ -37,7 +39,6 @@
       box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
     }
     
-    /* Row highlighting for age */
     table.dataTable tbody tr.age-25-plus {
       background-color: #fee2e2 !important; /* red-100 */
       font-weight: 500;
@@ -47,7 +48,6 @@
       background-color: #fef9c3 !important; /* yellow-100 */
     }
     
-    /* Ensure responsive DataTables icons are centered */
     table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before,
     table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
         top: 50%;
@@ -65,8 +65,8 @@
       <p class="text-slate-500 mt-2">A comprehensive directory of our dedicated volunteers.</p>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-        <div id="total-members-card" class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center space-x-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center space-x-4">
             <div class="bg-blue-100 text-blue-600 p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.124-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.124-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
             <div>
                 <p class="text-slate-500 text-sm">Total Members</p>
@@ -80,16 +80,19 @@
                 <p id="count-21" class="text-2xl font-bold text-slate-800">0</p>
             </div>
         </div>
-        <div class="bg-red-100 p-5 rounded-xl shadow-sm border border-red-200 flex items-center space-x-4">
-            <div class="bg-red-200 text-red-600 p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center space-x-4">
+            <div class="bg-red-100 text-red-600 p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
             <div>
-                <p class="text-red-500 text-sm">Members (Age 0-25)</p>
-                <p id="count-25" class="text-2xl font-bold text-red-800">0</p>
+                <p class="text-slate-500 text-sm">Members (Age 0-25)</p>
+                <p id="count-25" class="text-2xl font-bold text-slate-800">0</p>
             </div>
         </div>
     </div>
     
-    <div class="mb-6 flex justify-end">
+    <div class="mb-6 flex flex-col sm:flex-row justify-end gap-3">
+        <button id="exportDataBtn" class="bg-green-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 transition duration-200">
+            Export Updated Data
+        </button>
         <button id="addMemberBtn" class="bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition duration-200">
             + Add New Member
         </button>
@@ -110,6 +113,7 @@
     </div>
   </div>
 
+  <!-- Delete Confirmation Modal -->
   <div id="deleteModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 hidden">
     <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
       <div class="mt-3 text-center">
@@ -118,7 +122,7 @@
         </div>
         <h3 class="text-lg leading-6 font-medium text-gray-900 mt-4">Confirm Deletion</h3>
         <div class="mt-2 px-7 py-3">
-          <p class="text-sm text-gray-500">Are you sure you want to delete this member? This action cannot be undone.</p>
+          <p class="text-sm text-gray-500">This will remove the member from your view. Use the 'Export' button to get the final data for permanent deletion.</p>
         </div>
         <div class="items-center px-4 py-3 space-x-2">
           <button id="confirmDelete" class="px-4 py-2 bg-red-500 text-white text-base font-medium rounded-md w-auto shadow-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">Delete</button>
@@ -128,53 +132,58 @@
     </div>
   </div>
 
-  <div id="addMemberModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 hidden">
-        <div class="relative top-10 mx-auto p-5 border w-full max-w-2xl shadow-lg rounded-md bg-white">
-            <div class="flex justify-between items-center pb-3 border-b">
-                <p class="text-2xl font-bold text-slate-800">Add New Member</p>
-                <div id="closeAddModal" class="cursor-pointer z-50">
-                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg>
-                </div>
+  <!-- Add/Export Modals -->
+  <div id="dataModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 hidden">
+    <div class="relative top-10 mx-auto p-5 border w-full max-w-2xl shadow-lg rounded-md bg-white">
+        <div class="flex justify-between items-center pb-3 border-b">
+            <p id="dataModalTitle" class="text-2xl font-bold text-slate-800">Modal Title</p>
+            <div id="closeDataModal" class="cursor-pointer z-50">
+                <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg>
             </div>
-            <form id="addMemberForm" class="mt-4 space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="name" placeholder="Full Name*" required>
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="dob" placeholder="DOB (DD-MM-YYYY)*" required>
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="gotra" placeholder="Gotra">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="tel" name="phone" placeholder="Phone Number*" required>
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="tel" name="whatsapp" placeholder="WhatsApp Number">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="email" name="email" placeholder="Email Address">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="blood" placeholder="Blood Group">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="qualification" placeholder="Qualification">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="native" placeholder="Native Place">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="father_fname" placeholder="Father's First Name">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="father_lname" placeholder="Father's Last Name">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="mother_fname" placeholder="Mother's First Name">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="mother_lname" placeholder="Mother's Last Name">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="h_address" placeholder="Home Address">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="city" placeholder="City">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="state" placeholder="State">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="pincode" placeholder="Pincode">
-                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="kishoremandal" placeholder="Kishore Mandal" value="HBST Hanumanthnagar">
-                </div>
-                <div class="mt-6">
-                    <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition duration-200">
-                        Generate Member JSON
-                    </button>
-                </div>
-            </form>
-            <div id="jsonOutputContainer" class="hidden mt-6">
-                <h4 class="font-bold text-lg">Copy this JSON and add it to `data.json`</h4>
-                <p class="text-sm text-gray-600 mb-2">Copy the block below and paste it inside the `[` ... `]` in your `data.json` file. Remember to add a comma after the previous entry.</p>
-                <div class="relative">
-                    <pre id="jsonOutput" class="bg-gray-800 text-white p-4 rounded-lg text-sm overflow-x-auto"></pre>
-                    <button id="copyJsonBtn" class="absolute top-2 right-2 bg-gray-600 hover:bg-gray-500 text-white font-bold py-1 px-2 rounded text-xs">Copy</button>
-                </div>
+        </div>
+        
+        <!-- Add Member Form -->
+        <form id="addMemberForm" class="mt-4 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="name" placeholder="Full Name*" required>
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="dob" placeholder="DOB (DD-MM-YYYY)*" required>
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="gotra" placeholder="Gotra">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="tel" name="phone" placeholder="Phone Number*" required>
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="tel" name="whatsapp" placeholder="WhatsApp Number">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="email" name="email" placeholder="Email Address">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="blood" placeholder="Blood Group">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="qualification" placeholder="Qualification">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="native" placeholder="Native Place">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="father_fname" placeholder="Father's First Name">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="father_lname" placeholder="Father's Last Name">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="mother_fname" placeholder="Mother's First Name">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="mother_lname" placeholder="Mother's Last Name">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="h_address" placeholder="Home Address">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="city" placeholder="City">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="state" placeholder="State">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="pincode" placeholder="Pincode">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="kishoremandal" value="HBST Hanumanthnagar" placeholder="Kishore Mandal">
+            </div>
+            <div class="mt-6">
+                <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition duration-200">
+                    Generate Member JSON
+                </button>
+            </div>
+        </form>
+        
+        <!-- JSON Output Area -->
+        <div id="jsonOutputContainer" class="hidden mt-6">
+            <h4 id="jsonContainerTitle" class="font-bold text-lg">Generated JSON</h4>
+            <p id="jsonContainerSubtitle" class="text-sm text-gray-600 mb-2">Instructions go here.</p>
+            <div class="relative">
+                <pre id="jsonOutput" class="bg-gray-800 text-white p-4 rounded-lg text-sm overflow-x-auto max-h-64"></pre>
+                <button id="copyJsonBtn" class="absolute top-2 right-2 bg-gray-600 hover:bg-gray-500 text-white font-bold py-1 px-2 rounded text-xs">Copy</button>
             </div>
         </div>
     </div>
+</div>
 
-
+  <!-- jQuery, DataTables, Moment.js -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
@@ -183,41 +192,41 @@
   
   <script>
     $(document).ready(function () {
-      // **SORTING FIX**: Initialize moment.js for DataTables to correctly sort DD-MM-YYYY dates.
-      // This is the key to fixing the date sorting issue.
       $.fn.dataTable.moment('DD-MM-YYYY');
+      let table;
+      let allData = [];
+
+      // Function to get deleted IDs from localStorage
+      const getDeletedIds = () => JSON.parse(localStorage.getItem('tkmDeletedIds') || '[]');
+
+      // Function to save deleted IDs to localStorage
+      const saveDeletedIds = (ids) => localStorage.setItem('tkmDeletedIds', JSON.stringify(ids));
 
       $.getJSON("data.json", function (data) {
-        let processedData = data.map((item, index) => {
-          // Ensure each item has a unique ID
-          if (!item.id) {
-            item.id = `${item.name.replace(/\s+/g, '-').toLowerCase()}-${item.dob}`;
-          }
-          
-          // Calculate age
+        allData = data; // Store the original data
+        const deletedIds = getDeletedIds();
+        
+        // Filter out deleted members before processing
+        const visibleData = allData.filter(item => !deletedIds.includes(item.id));
+
+        let processedData = visibleData.map((item, index) => {
+          if (!item.id) item.id = `${item.name.replace(/\s+/g, '-').toLowerCase()}-${item.dob}`;
           const dobParts = item.dob.split('-');
           const dobDate = new Date(dobParts[2], dobParts[1] - 1, dobParts[0]);
           const today = new Date();
           let age = today.getFullYear() - dobDate.getFullYear();
           const m = today.getMonth() - dobDate.getMonth();
-          if (m < 0 || (m === 0 && today.getDate() < dobDate.getDate())) {
-            age--;
-          }
+          if (m < 0 || (m === 0 && today.getDate() < dobDate.getDate())) age--;
           item.age = age;
-          
-          // Create clickable links
           item.phoneLink = `<a href="tel:${item.phone}" class="text-indigo-600 hover:underline">${item.phone}</a>`;
           item.whatsappLink = item.whatsapp ? `<a href="https://wa.me/${item.whatsapp.replace(/\D/g,'')}" target="_blank" class="text-green-600 hover:underline">${item.whatsapp}</a>` : '';
           item.emailLink = `<a href="mailto:${item.email}" class="text-indigo-600 hover:underline">${item.email}</a>`;
-          
           return item;
         });
 
-        // Function to update member count cards
         function updateMemberCounts(currentData) {
           const total = currentData.length;
-          let count21 = 0;
-          let count25 = 0;
+          let count21 = 0, count25 = 0;
           currentData.forEach(item => {
             if (item.age >= 0 && item.age <= 21) count21++;
             if (item.age >= 0 && item.age <= 25) count25++;
@@ -227,44 +236,29 @@
           $("#count-25").text(count25);
         }
 
-        // Initial count display
         updateMemberCounts(processedData);
 
-        var table = $("#directory").DataTable({
+        table = $("#directory").DataTable({
           data: processedData,
           columns: [
-            { data: "Date" }, 
-            { data: "name" }, 
-            { data: "gotra" },
-            { data: "phoneLink", orderable: false }, 
-            { data: "whatsappLink", orderable: false }, 
-            { data: "native" },
-            { data: "dob" }, 
-            { data: "emailLink", orderable: false }, 
-            { data: "blood" },
-            { data: "qualification" },
+            { data: "Date" }, { data: "name" }, { data: "gotra" },
+            { data: "phoneLink", orderable: false }, { data: "whatsappLink", orderable: false }, 
+            { data: "native" }, { data: "dob" }, { data: "emailLink", orderable: false }, 
+            { data: "blood" }, { data: "qualification" },
             { data: null, render: (data, type, row) => `${row.father_fname || ''} ${row.father_lname || ''}`.trim() },
             { data: null, render: (data, type, row) => `${row.mother_fname || ''} ${row.mother_lname || ''}`.trim() },
-            { data: "h_address" }, 
-            { data: "city" }, 
-            { data: "state" }, 
-            { data: "pincode" },
+            { data: "h_address" }, { data: "city" }, { data: "state" }, { data: "pincode" },
             { data: "kishoremandal" },
             {
-              data: null,
-              orderable: false,
-              searchable: false,
-              responsivePriority: 1,
+              data: null, orderable: false, searchable: false, responsivePriority: 1,
               render: (data, type, row) => `<button class="btn-delete p-2 text-red-500 hover:bg-red-100 rounded-full" title="Delete ${row.name}">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
                                             </button>`
             }
           ],
           responsive: true,
-          // Default sort by the first column (Date) in descending order
           order: [[0, 'desc']],
           createdRow: function (row, data, dataIndex) {
-            // Apply age-based highlighting
             if (data.age >= 25) $(row).addClass('age-25-plus');
             else if (data.age >= 21) $(row).addClass('age-21-plus');
           }
@@ -275,17 +269,19 @@
         const deleteModal = $('#deleteModal');
 
         $('#directory tbody').on('click', '.btn-delete', function (e) {
-          e.stopPropagation(); // prevent row selection
+          e.stopPropagation();
           rowToDelete = table.row($(this).parents('tr'));
           deleteModal.removeClass('hidden');
         });
 
         $('#confirmDelete').on('click', function () {
           if (rowToDelete) {
-            // Note: This only removes from the view. The data.json file must be updated manually.
-            const rowData = rowToDelete.data();
-            console.log("Deleted Member ID for manual removal:", rowData.id);
-            
+            const memberId = rowToDelete.data().id;
+            const deletedIds = getDeletedIds();
+            if (!deletedIds.includes(memberId)) {
+                deletedIds.push(memberId);
+                saveDeletedIds(deletedIds);
+            }
             rowToDelete.remove().draw();
             updateMemberCounts(table.rows().data().toArray());
             deleteModal.addClass('hidden');
@@ -293,50 +289,66 @@
           }
         });
 
-        $('#cancelDelete, #deleteModal').on('click', function (e) {
-            if (e.target === this) {
-                deleteModal.addClass('hidden');
-                rowToDelete = null;
-            }
-        });
+        $('#cancelDelete').on('click', () => deleteModal.addClass('hidden'));
+      });
 
-        // --- ADD MEMBER LOGIC ---
-        const addMemberModal = $('#addMemberModal');
-        $('#addMemberBtn').on('click', () => addMemberModal.removeClass('hidden'));
-        $('#closeAddModal, #addMemberModal').on('click', function (e) {
-            if(e.target === this) {
-                addMemberModal.addClass('hidden');
-                $('#addMemberForm')[0].reset();
-                $('#jsonOutputContainer').addClass('hidden');
-            }
-        });
+      // --- MODAL HANDLING ---
+      const dataModal = $('#dataModal');
+      const addMemberForm = $('#addMemberForm');
+      const jsonOutputContainer = $('#jsonOutputContainer');
 
-        $('#addMemberForm').on('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const newMember = {};
-            
-            const name = formData.get('name');
-            const dob = formData.get('dob');
-            newMember.id = `${name.replace(/\s+/g, '-').toLowerCase()}-${dob}`;
-            newMember.Date = moment().format('DD-MM-YYYY');
+      const openDataModal = () => dataModal.removeClass('hidden');
+      const closeDataModal = () => {
+        dataModal.addClass('hidden');
+        addMemberForm[0].reset();
+        jsonOutputContainer.addClass('hidden');
+      };
 
-            for (let [key, value] of formData.entries()) {
-                newMember[key] = value || ""; // Ensure empty fields are empty strings
-            }
+      $('#addMemberBtn').on('click', () => {
+        $('#dataModalTitle').text('Add New Member');
+        $('#jsonContainerTitle').text('Generated JSON for New Member');
+        $('#jsonContainerSubtitle').text("Copy this and add it to your data.json file. Remember to add a comma after the previous entry.");
+        addMemberForm.show();
+        openDataModal();
+      });
+      
+      $('#exportDataBtn').on('click', () => {
+        const deletedIds = getDeletedIds();
+        const finalData = allData.filter(item => !deletedIds.includes(item.id));
+        
+        $('#dataModalTitle').text('Export Updated Data');
+        $('#jsonContainerTitle').text('Final Member Data');
+        $('#jsonContainerSubtitle').text("To make deletions permanent for everyone, copy this entire block and replace the contents of your data.json file with it.");
+        addMemberForm.hide();
+        
+        $('#jsonOutput').text(JSON.stringify(finalData, null, 2));
+        jsonOutputContainer.removeClass('hidden');
+        openDataModal();
+      });
 
-            const jsonString = JSON.stringify(newMember, null, 2);
-            $('#jsonOutput').text(jsonString);
-            $('#jsonOutputContainer').removeClass('hidden');
-        });
+      $('#closeDataModal').on('click', closeDataModal);
 
-        $('#copyJsonBtn').on('click', function() {
-            const jsonText = $('#jsonOutput').text();
-            navigator.clipboard.writeText(jsonText).then(() => {
-                $(this).text('Copied!');
-                setTimeout(() => $(this).text('Copy'), 2000);
-            });
-        });
+      addMemberForm.on('submit', function(e) {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+          const newMember = {};
+          const name = formData.get('name');
+          const dob = formData.get('dob');
+          newMember.id = `${name.replace(/\s+/g, '-').toLowerCase()}-${dob}`;
+          newMember.Date = moment().format('DD-MM-YYYY');
+          for (let [key, value] of formData.entries()) {
+              newMember[key] = value || "";
+          }
+          $('#jsonOutput').text(JSON.stringify(newMember, null, 2));
+          jsonOutputContainer.removeClass('hidden');
+      });
+
+      $('#copyJsonBtn').on('click', function() {
+          const jsonText = $('#jsonOutput').text();
+          navigator.clipboard.writeText(jsonText).then(() => {
+              $(this).text('Copied!');
+              setTimeout(() => $(this).text('Copy'), 2000);
+          });
       });
     });
   </script>
