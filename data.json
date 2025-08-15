@@ -1,486 +1,356 @@
-[
-  {
-    "id": "rishab-03-03-2008",
-    "Date": "03-08-2025",
-    "name": "Rishab",
-    "gotra": "Deserala",
-    "phone": "7892045667",
-    "whatsapp": "7892048667",
-    "native": "Banglore",
-    "dob": "03-03-2008",
-    "email": "rishabjain1707@gmail.com",
-    "blood": "A+",
-    "qualification": "studying 2nd pu",
-    "father_fname": "Nilesh",
-    "father_lname": "Deserala",
-    "mother_fname": "Neetha",
-    "mother_lname": "Deserala",
-    "h_address": "#20 12th main near Nirmala store bus stop hanumanthnagar",
-    "city": "Bangalore",
-    "state": "Karnataka",
-    "pincode": "560050",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "neerav-03-08-2006",
-    "Date": "18-06-2025",
-    "name": "Neerav",
-    "gotra": "Pugalia",
-    "phone": "8217526962",
-    "whatsapp": "8217526962",
-    "native": "Banglore",
-    "dob": "03-08-2006",
-    "email": "neerav687@gmail.com",
-    "blood": "B+",
-    "qualification": "BBA",
-    "father_fname": "Vikram kumar",
-    "father_lname": "Pugalia",
-    "mother_fname": "Kavita devi",
-    "mother_lname": "Pugalia",
-    "h_address": "18/9, 1st floor, 2nd block, bsk 1st stage, hanumanthnagar",
-    "city": "Banglore",
-    "state": "Karnataka",
-    "pincode": "560050",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "neev-s-31-01-2008",
-    "Date": "18-06-2025",
-    "name": "Neev S",
-    "gotra": "Jain",
-    "phone": "8310750696",
-    "whatsapp": "8310750696",
-    "native": "Lawa sardargarh",
-    "dob": "31-01-2008",
-    "email": "neevjain152008@gmail.com",
-    "blood": "B+",
-    "qualification": "Pursuing 12th grade",
-    "father_fname": "Sandeep",
-    "father_lname": "Jain",
-    "mother_fname": "Vinitha",
-    "mother_lname": "Jain",
-    "h_address": "41, 2nd Main CT Bed road Banashankari 3rd stage",
-    "city": "Bengaluru",
-    "state": "Karnataka",
-    "pincode": "560085",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "mohit-01-08-2003",
-    "Date": "05-06-2025",
-    "name": "Mohit",
-    "gotra": "Dak",
-    "phone": "7353679373",
-    "whatsapp": "7353679373",
-    "native": "Barar Rajasthan",
-    "dob": "01-08-2003",
-    "email": "mohit.jain2145@gmail.com",
-    "blood": "B-",
-    "qualification": "B.E",
-    "father_fname": "Gautham Chand",
-    "father_lname": "Dak",
-    "mother_fname": "Manju",
-    "mother_lname": "Dak",
-    "h_address": "278, Matru Ashish, 9th B Main, Hanumanthnagar, Bangalore - 560019",
-    "city": "Bengaluru",
-    "state": "Karnataka",
-    "pincode": "560019",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "harsh-14-02-2003",
-    "Date": "01-06-2025",
-    "name": "Harsh",
-    "gotra": "Pugalia",
-    "phone": "7483292604",
-    "whatsapp": "7483292604",
-    "native": "Sri dungargarh",
-    "dob": "14-02-2003",
-    "email": "harshjain1488@gmail.com",
-    "blood": "B+",
-    "qualification": "Digital marketing",
-    "father_fname": "Pawan",
-    "father_lname": "Pugalia",
-    "mother_fname": "Sonia",
-    "mother_lname": "Pugalia",
-    "h_address": "#5, 1st cross, vidhya peetha circle",
-    "city": "Bangalore",
-    "state": "Karnataka",
-    "pincode": "560070",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "jatin-12-03-2010",
-    "Date": "26-05-2025",
-    "name": "Jatin",
-    "gotra": "Naresh Kumar Jain",
-    "phone": "7019789937",
-    "whatsapp": "7019789937",
-    "native": "Bangalore",
-    "dob": "12-03-2010",
-    "email": "contact@jatinjain.com",
-    "blood": "AB+",
-    "qualification": "Studying in 10th",
-    "father_fname": "Naresh",
-    "father_lname": "Kumar J Jain",
-    "mother_fname": "Aruna",
-    "mother_lname": "Naresh Jain",
-    "h_address": "Flat no 403 4th Floor A Block Shivadurga's Landmark Opposite to Bangalore One Near Shankarnag Circle",
-    "city": "Bangalore",
-    "state": "Karnataka",
-    "pincode": "560050",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "yash-dudheria-02-05-2006",
-    "Date": "08-01-2025",
-    "name": "Yash dudheria",
-    "gotra": "Dudheria",
-    "phone": "9632932757",
-    "whatsapp": "9632932757",
-    "native": "Rajasthan",
-    "dob": "02-05-2006",
-    "email": "yjain1869@gmail.com",
-    "blood": "Do Not Know",
-    "qualification": "Studying in 2nd puc",
-    "father_fname": "Amit",
-    "father_lname": "Dudheria",
-    "mother_fname": "Anjali",
-    "mother_lname": "Dudheria",
-    "h_address": "Srinivas nagar bankcolony 13th main 9th cross",
-    "city": "Bangalore",
-    "state": "Karnataka",
-    "pincode": "560050",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "vivek-04-12-2006",
-    "Date": "08-01-2025",
-    "name": "Vivek",
-    "gotra": "Boliya",
-    "phone": "9724050154",
-    "whatsapp": "9724050154",
-    "native": "Kharnota",
-    "dob": "04-12-2006",
-    "email": "vivekboliya007@gmail.com",
-    "blood": "B+",
-    "qualification": "12",
-    "father_fname": "Sunil",
-    "father_lname": "Boliya",
-    "mother_fname": "Khushbu",
-    "mother_lname": "Boliya",
-    "h_address": "409,mahaveer nivas,srinagar",
-    "city": "Bengaluru",
-    "state": "Karnataka",
-    "pincode": "560050",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "ronak-jain-09-05-2005",
-    "Date": "08-01-2025",
-    "name": "Ronak Jain",
-    "gotra": "Boliya",
-    "phone": "8088620864",
-    "whatsapp": "8088620864",
-    "native": "Kharnota",
-    "dob": "09-05-2005",
-    "email": "jainronak178@gmail.com",
-    "blood": "B+",
-    "qualification": "12 th pass",
-    "father_fname": "Goutham Chand",
-    "father_lname": "Boliya",
-    "mother_fname": "Vanitha jain",
-    "mother_lname": "Boliya",
-    "h_address": "#407, mahaveer nivas , Srinagar , 4th main",
-    "city": "Bengaluru",
-    "state": "Karnataka",
-    "pincode": "560050",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "daksh-16-03-2009",
-    "Date": "07-01-2025",
-    "name": "Daksh",
-    "gotra": "Mandot",
-    "phone": "6362793861",
-    "whatsapp": "6362793851",
-    "native": "Tall",
-    "dob": "16-03-2009",
-    "email": "daksh4op@gmail.com",
-    "blood": "O+",
-    "qualification": "10th",
-    "father_fname": "Ashok",
-    "father_lname": "Mandot",
-    "mother_fname": "Priya",
-    "mother_lname": "Mandot",
-    "h_address": "603,Samyak,3rd main road,13th cross,K R road Shastrinagar",
-    "city": "Bengaluru",
-    "state": "Karnataka",
-    "pincode": "560070",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "daksh-16-03-2009-2",
-    "Date": "07-01-2025",
-    "name": "Daksh",
-    "gotra": "Mandot",
-    "phone": "6362793851",
-    "whatsapp": "6362793851",
-    "native": "Taal",
-    "dob": "16-03-2009",
-    "email": "daksh4op@gmail.com",
-    "blood": "O+",
-    "qualification": "9th",
-    "father_fname": "Ashok",
-    "father_lname": "Mandot",
-    "mother_fname": "Priya",
-    "mother_lname": "Mandot",
-    "h_address": "603,Samyak,3rd main road,13th cross,K R road Shastrinagar",
-    "city": "Bengaluru",
-    "state": "Karnataka",
-    "pincode": "560070",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "himanshu-07-09-2007",
-    "Date": "06-01-2025",
-    "name": "Himanshu",
-    "gotra": "Daga",
-    "phone": "6363644194",
-    "whatsapp": "6363644194",
-    "native": "Rajasthan",
-    "dob": "07-09-2007",
-    "email": "minatoeditz07@gmail.com",
-    "blood": "A+",
-    "qualification": "2nd PUC",
-    "father_fname": "Santosh",
-    "father_lname": "Kumar Daga",
-    "mother_fname": "Jyoti",
-    "mother_lname": "Daga",
-    "h_address": "#172, 7th Main, 2nd Cross, Srinivasnagar",
-    "city": "Bangalore",
-    "state": "Karanataka",
-    "pincode": "560050",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "chandraprabh-21-12-2007",
-    "Date": "14-07-2024",
-    "name": "Chandraprabh",
-    "gotra": "Gadiya",
-    "phone": "7795991152",
-    "whatsapp": "6364911117",
-    "native": "Chickmangalur",
-    "dob": "21-12-2007",
-    "email": "chandraprabh82@gmail.com",
-    "blood": "B+",
-    "qualification": "10th pass",
-    "father_fname": "Dinesh",
-    "father_lname": "Gadiya",
-    "mother_fname": "Sangeetha",
-    "mother_lname": "Gadiya",
-    "h_address": "361/12 6th main road hanumanthnagar near nirmal store bangalore 560050",
-    "city": "Bangalore",
-    "state": "Karnataka",
-    "pincode": "560050",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "arihant-21-08-2000",
-    "Date": "10-07-2024",
-    "name": "Arihant",
-    "gotra": "Mandoth",
-    "phone": "8660661828",
-    "whatsapp": "8660661828",
-    "native": "Banglore",
-    "dob": "21-08-2000",
-    "email": "arihantjain926@gmail.com",
-    "blood": "O+",
-    "qualification": "Pharmacy",
-    "father_fname": "Ashok",
-    "father_lname": "Mandoth",
-    "mother_fname": "Sarita",
-    "mother_lname": "Mandoth",
-    "h_address": "#386,10th cross Shastrinagar",
-    "city": "Banglore",
-    "state": "Karnataka",
-    "pincode": "560028",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "jaswanth-19-12-2001",
-    "Date": "10-07-2024",
-    "name": "Jaswanth",
-    "gotra": "Jain",
-    "phone": "9739926547",
-    "whatsapp": "9739926547",
-    "native": "Bangalore",
-    "dob": "19-12-2001",
-    "email": "jaswanthjainn19@gmail.com",
-    "blood": "O+",
-    "qualification": "B.com",
-    "father_fname": "Goutam",
-    "father_lname": "Bohra",
-    "mother_fname": "Ramila",
-    "mother_lname": "Bohra",
-    "h_address": "#386,10th cross shastrinagar",
-    "city": "Bengaluru",
-    "state": "Karnataka",
-    "pincode": "560028",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "priyansh-03-12-2007",
-    "Date": "16-06-2024",
-    "name": "Priyansh",
-    "gotra": "Chopra",
-    "phone": "8073787272",
-    "whatsapp": "8073787272",
-    "native": "Parlu",
-    "dob": "03-12-2007",
-    "email": "choprapriyansh5@gmail.com",
-    "blood": "O+",
-    "qualification": "1 pu",
-    "father_fname": "Pushparaj",
-    "father_lname": "Chopra",
-    "mother_fname": "Rajul",
-    "mother_lname": "Chopra",
-    "h_address": "#24 shagun apartment, Gavipuram Extention near shekar hospital",
-    "city": "Bangalore",
-    "state": "Karnataka",
-    "pincode": "560019",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "mahaveer-13-09-2007",
-    "Date": "13-06-2024",
-    "name": "Mahaveer",
-    "gotra": "Bumb",
-    "phone": "9380031964",
-    "whatsapp": "9380031964",
-    "native": "Rajasthan",
-    "dob": "13-09-2007",
-    "email": "Mahaveerjain9261@gmail.com",
-    "blood": "O+",
-    "qualification": "10th pass",
-    "father_fname": "Vikas",
-    "father_lname": "Bumb",
-    "mother_fname": "Sunita",
-    "mother_lname": "Bumb",
-    "h_address": "Girnar darshan hanumanthnagar",
-    "city": "Banglore",
-    "state": "Karnataka",
-    "pincode": "560019",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "nayan-07-04-2007",
-    "Date": "11-06-2024",
-    "name": "Nayan",
-    "gotra": "Raisoni",
-    "phone": "8296862847",
-    "whatsapp": "8296862847",
-    "native": "Bangalore",
-    "dob": "07-04-2007",
-    "email": "nayannishi79@gmail.com",
-    "blood": "B+",
-    "qualification": "12th pass",
-    "father_fname": "Pushpendra",
-    "father_lname": "Raisoni",
-    "mother_fname": "Ranju",
-    "mother_lname": "Raisoni",
-    "h_address": "609 3rd main 13th cross kr road shastri Nagar banshankari 2nd stage",
-    "city": "BANGALORE",
-    "state": "KARNATAKA",
-    "pincode": "560070",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "jinesh-r-08-05-2007",
-    "Date": "11-06-2024",
-    "name": "jinesh r",
-    "gotra": "dhoka",
-    "phone": "9019744426",
-    "whatsapp": "9019744426",
-    "native": "bangloure",
-    "dob": "08-05-2007",
-    "email": "dhokajinesh123@gmail.com",
-    "blood": "B+",
-    "qualification": "12",
-    "father_fname": "rakesh kumar",
-    "father_lname": "jain",
-    "mother_fname": "srilekha",
-    "mother_lname": "r",
-    "h_address": "s3 shriven legacy",
-    "city": "bangloure",
-    "state": "karnataka",
-    "pincode": "560028",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "rishab-09-01-2003",
-    "Date": "05-04-2024",
-    "name": "Rishab",
-    "gotra": "Bumb",
-    "phone": "6364358563",
-    "whatsapp": "6364358563",
-    "native": "Rajasthan",
-    "dob": "09-01-2003",
-    "email": "2003rishabbumb@gmail.com",
-    "blood": "AB+",
-    "qualification": "BBA",
-    "father_fname": "Ramesh Kumar",
-    "father_lname": "Bumb",
-    "mother_fname": "Mamta .R",
-    "mother_lname": "Bumb",
-    "h_address": "33 OLD 19,RATNA VILAS ROAD BASVANGUDI,BENGALURU",
-    "city": "BANGALORE",
-    "state": "Karnataka",
-    "pincode": "560004",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "naman-23-08-2004",
-    "Date": "05-04-2024",
-    "name": "Naman",
-    "gotra": "Chopra",
-    "phone": "8867502344",
-    "whatsapp": "8867502344",
-    "native": "Parlu-Balotra",
-    "dob": "23-08-2004",
-    "email": "chopranamanp@gmail.com",
-    "blood": "O+",
-    "qualification": "Pursuing CA",
-    "father_fname": "B Pushparaj",
-    "father_lname": "Chopra",
-    "mother_fname": "Rajul",
-    "mother_lname": "Jain",
-    "h_address": "Shagun Apartment",
-    "city": "Bengaluru",
-    "state": "Karnataka",
-    "pincode": "560019",
-    "kishoremandal": "HBST Hanumanthnagar"
-  },
-  {
-    "id": "pranavv-04-03-2001",
-    "Date": "19-02-2024",
-    "name": "Pranavv",
-    "gotra": "Dhariwal",
-    "phone": "9535377536",
-    "whatsapp": "",
-    "native": "Chitraji Guda",
-    "dob": "04-03-2001",
-    "email": "Pranavjain800@gmail.com",
-    "blood": "B+",
-    "qualification": "Bba",
-    "father_fname": "Satishji",
-    "father_lname": "Dhariwal",
-    "mother_fname": "Anitaji",
-    "mother_lname": "Dhariwal",
-    "h_address": "Namokaar 13 cross Kr road shastry nagar",
-    "city": "Bengaluru",
-    "state": "Karnaataka",
-    "pincode": "560028",
-    "kishoremandal": "HBST Hanumanthnagar"
-  }
-]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TKM HBST Volunteers</title>
+  
+  <!-- Tailwind CSS for modern styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- DataTables CSS for table functionality -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"/>
+
+  <style>
+    /* Custom styles to complement Tailwind and DataTables */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f1f5f9; /* slate-100 */
+    }
+    
+    .dataTables_wrapper .dataTables_length select,
+    .dataTables_wrapper .dataTables_filter input {
+      border: 1px solid #cbd5e1; /* slate-300 */
+      border-radius: 0.375rem; /* rounded-md */
+      padding: 0.5rem 0.75rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .dataTables_wrapper .dataTables_length select:focus,
+    .dataTables_wrapper .dataTables_filter input:focus {
+      outline: none;
+      border-color: #4f46e5; /* indigo-600 */
+      box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
+    }
+    
+    table.dataTable tbody tr.age-25-plus {
+      background-color: #fee2e2 !important; /* red-100 */
+      font-weight: 500;
+    }
+
+    table.dataTable tbody tr.age-21-plus {
+      background-color: #fef9c3 !important; /* yellow-100 */
+    }
+    
+    table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before,
+    table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-700">
+
+  <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+    
+    <header class="text-center mb-8">
+      <h1 class="text-3xl md:text-4xl font-bold text-slate-800">TKM HBST Volunteers Directory 📒</h1>
+      <p class="text-slate-500 mt-2">A comprehensive directory of our dedicated volunteers.</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center space-x-4">
+            <div class="bg-blue-100 text-blue-600 p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.124-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.124-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
+            <div>
+                <p class="text-slate-500 text-sm">Total Members</p>
+                <p id="total-count" class="text-2xl font-bold text-slate-800">0</p>
+            </div>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center space-x-4">
+            <div class="bg-yellow-100 text-yellow-600 p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01" /></svg></div>
+            <div>
+                <p class="text-slate-500 text-sm">Members (Age 0-21)</p>
+                <p id="count-21" class="text-2xl font-bold text-slate-800">0</p>
+            </div>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex items-center space-x-4">
+            <div class="bg-red-100 text-red-600 p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+            <div>
+                <p class="text-slate-500 text-sm">Members (Age 0-25)</p>
+                <p id="count-25" class="text-2xl font-bold text-slate-800">0</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mb-6 flex flex-col sm:flex-row justify-end gap-3">
+        <button id="exportDataBtn" class="bg-green-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 transition duration-200">
+            Export Updated Data
+        </button>
+        <button id="addMemberBtn" class="bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition duration-200">
+            + Add New Member
+        </button>
+    </div>
+
+    <div class="bg-white p-4 sm:p-6 rounded-xl shadow-sm border border-slate-200">
+      <table id="directory" class="display stripe" style="width:100%">
+        <thead>
+          <tr>
+            <th>Date</th><th>Name</th><th>Gotra</th><th>Phone</th><th>WhatsApp</th>
+            <th>Native</th><th>DOB</th><th>Email</th><th>Blood</th><th>Qualification</th>
+            <th>Father</th><th>Mother</th><th>Address</th><th>City</th><th>State</th><th>Pincode</th><th>Mandal</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Delete Confirmation Modal -->
+  <div id="deleteModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 hidden">
+    <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+      <div class="mt-3 text-center">
+        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
+          <svg class="h-6 w-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+        </div>
+        <h3 class="text-lg leading-6 font-medium text-gray-900 mt-4">Confirm Deletion</h3>
+        <div class="mt-2 px-7 py-3">
+          <p class="text-sm text-gray-500">This will remove the member from your view. Use the 'Export' button to get the final data for permanent deletion.</p>
+        </div>
+        <div class="items-center px-4 py-3 space-x-2">
+          <button id="confirmDelete" class="px-4 py-2 bg-red-500 text-white text-base font-medium rounded-md w-auto shadow-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">Delete</button>
+          <button id="cancelDelete" class="px-4 py-2 bg-gray-200 text-gray-800 text-base font-medium rounded-md w-auto shadow-sm hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add/Export Modals -->
+  <div id="dataModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 hidden">
+    <div class="relative top-10 mx-auto p-5 border w-full max-w-2xl shadow-lg rounded-md bg-white">
+        <div class="flex justify-between items-center pb-3 border-b">
+            <p id="dataModalTitle" class="text-2xl font-bold text-slate-800">Modal Title</p>
+            <div id="closeDataModal" class="cursor-pointer z-50">
+                <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg>
+            </div>
+        </div>
+        
+        <!-- Add Member Form -->
+        <form id="addMemberForm" class="mt-4 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="name" placeholder="Full Name*" required>
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="dob" placeholder="DOB (DD-MM-YYYY)*" required>
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="gotra" placeholder="Gotra">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="tel" name="phone" placeholder="Phone Number*" required>
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="tel" name="whatsapp" placeholder="WhatsApp Number">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="email" name="email" placeholder="Email Address">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="blood" placeholder="Blood Group">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="qualification" placeholder="Qualification">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="native" placeholder="Native Place">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="father_fname" placeholder="Father's First Name">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="father_lname" placeholder="Father's Last Name">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="mother_fname" placeholder="Mother's First Name">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="mother_lname" placeholder="Mother's Last Name">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="h_address" placeholder="Home Address">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="city" placeholder="City">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="state" placeholder="State">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="pincode" placeholder="Pincode">
+                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="kishoremandal" value="HBST Hanumanthnagar" placeholder="Kishore Mandal">
+            </div>
+            <div class="mt-6">
+                <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition duration-200">
+                    Generate Member JSON
+                </button>
+            </div>
+        </form>
+        
+        <!-- JSON Output Area -->
+        <div id="jsonOutputContainer" class="hidden mt-6">
+            <h4 id="jsonContainerTitle" class="font-bold text-lg">Generated JSON</h4>
+            <p id="jsonContainerSubtitle" class="text-sm text-gray-600 mb-2">Instructions go here.</p>
+            <div class="relative">
+                <pre id="jsonOutput" class="bg-gray-800 text-white p-4 rounded-lg text-sm overflow-x-auto max-h-64"></pre>
+                <button id="copyJsonBtn" class="absolute top-2 right-2 bg-gray-600 hover:bg-gray-500 text-white font-bold py-1 px-2 rounded text-xs">Copy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- jQuery, DataTables, Moment.js -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdn.datatables.net/plug-ins/1.13.6/sorting/datetime-moment.js"></script>
+  
+  <script>
+    $(document).ready(function () {
+      $.fn.dataTable.moment('DD-MM-YYYY');
+      let table;
+      let allData = [];
+
+      // Function to get deleted IDs from localStorage
+      const getDeletedIds = () => JSON.parse(localStorage.getItem('tkmDeletedIds') || '[]');
+
+      // Function to save deleted IDs to localStorage
+      const saveDeletedIds = (ids) => localStorage.setItem('tkmDeletedIds', JSON.stringify(ids));
+
+      $.getJSON("data.json", function (data) {
+        allData = data; // Store the original data
+        const deletedIds = getDeletedIds();
+        
+        // Filter out deleted members before processing
+        const visibleData = allData.filter(item => !deletedIds.includes(item.id));
+
+        let processedData = visibleData.map((item, index) => {
+          if (!item.id) item.id = `${item.name.replace(/\s+/g, '-').toLowerCase()}-${item.dob}`;
+          const dobParts = item.dob.split('-');
+          const dobDate = new Date(dobParts[2], dobParts[1] - 1, dobParts[0]);
+          const today = new Date();
+          let age = today.getFullYear() - dobDate.getFullYear();
+          const m = today.getMonth() - dobDate.getMonth();
+          if (m < 0 || (m === 0 && today.getDate() < dobDate.getDate())) age--;
+          item.age = age;
+          item.phoneLink = `<a href="tel:${item.phone}" class="text-indigo-600 hover:underline">${item.phone}</a>`;
+          item.whatsappLink = item.whatsapp ? `<a href="https://wa.me/${item.whatsapp.replace(/\D/g,'')}" target="_blank" class="text-green-600 hover:underline">${item.whatsapp}</a>` : '';
+          item.emailLink = `<a href="mailto:${item.email}" class="text-indigo-600 hover:underline">${item.email}</a>`;
+          return item;
+        });
+
+        function updateMemberCounts(currentData) {
+          const total = currentData.length;
+          let count21 = 0, count25 = 0;
+          currentData.forEach(item => {
+            if (item.age >= 0 && item.age <= 21) count21++;
+            if (item.age >= 0 && item.age <= 25) count25++;
+          });
+          $("#total-count").text(total);
+          $("#count-21").text(count21);
+          $("#count-25").text(count25);
+        }
+
+        updateMemberCounts(processedData);
+
+        table = $("#directory").DataTable({
+          data: processedData,
+          columns: [
+            { data: "Date" }, { data: "name" }, { data: "gotra" },
+            { data: "phoneLink", orderable: false }, { data: "whatsappLink", orderable: false }, 
+            { data: "native" }, { data: "dob" }, { data: "emailLink", orderable: false }, 
+            { data: "blood" }, { data: "qualification" },
+            { data: null, render: (data, type, row) => `${row.father_fname || ''} ${row.father_lname || ''}`.trim() },
+            { data: null, render: (data, type, row) => `${row.mother_fname || ''} ${row.mother_lname || ''}`.trim() },
+            { data: "h_address" }, { data: "city" }, { data: "state" }, { data: "pincode" },
+            { data: "kishoremandal" },
+            {
+              data: null, orderable: false, searchable: false, responsivePriority: 1,
+              render: (data, type, row) => `<button class="btn-delete p-2 text-red-500 hover:bg-red-100 rounded-full" title="Delete ${row.name}">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                                            </button>`
+            }
+          ],
+          responsive: true,
+          order: [[0, 'desc']],
+          createdRow: function (row, data, dataIndex) {
+            if (data.age >= 25) $(row).addClass('age-25-plus');
+            else if (data.age >= 21) $(row).addClass('age-21-plus');
+          }
+        });
+
+        // --- DELETION LOGIC ---
+        let rowToDelete = null;
+        const deleteModal = $('#deleteModal');
+
+        $('#directory tbody').on('click', '.btn-delete', function (e) {
+          e.stopPropagation();
+          rowToDelete = table.row($(this).parents('tr'));
+          deleteModal.removeClass('hidden');
+        });
+
+        $('#confirmDelete').on('click', function () {
+          if (rowToDelete) {
+            const memberId = rowToDelete.data().id;
+            const deletedIds = getDeletedIds();
+            if (!deletedIds.includes(memberId)) {
+                deletedIds.push(memberId);
+                saveDeletedIds(deletedIds);
+            }
+            rowToDelete.remove().draw();
+            updateMemberCounts(table.rows().data().toArray());
+            deleteModal.addClass('hidden');
+            rowToDelete = null;
+          }
+        });
+
+        $('#cancelDelete').on('click', () => deleteModal.addClass('hidden'));
+      });
+
+      // --- MODAL HANDLING ---
+      const dataModal = $('#dataModal');
+      const addMemberForm = $('#addMemberForm');
+      const jsonOutputContainer = $('#jsonOutputContainer');
+
+      const openDataModal = () => dataModal.removeClass('hidden');
+      const closeDataModal = () => {
+        dataModal.addClass('hidden');
+        addMemberForm[0].reset();
+        jsonOutputContainer.addClass('hidden');
+      };
+
+      $('#addMemberBtn').on('click', () => {
+        $('#dataModalTitle').text('Add New Member');
+        $('#jsonContainerTitle').text('Generated JSON for New Member');
+        $('#jsonContainerSubtitle').text("Copy this and add it to your data.json file. Remember to add a comma after the previous entry.");
+        addMemberForm.show();
+        openDataModal();
+      });
+      
+      $('#exportDataBtn').on('click', () => {
+        const deletedIds = getDeletedIds();
+        const finalData = allData.filter(item => !deletedIds.includes(item.id));
+        
+        $('#dataModalTitle').text('Export Updated Data');
+        $('#jsonContainerTitle').text('Final Member Data');
+        $('#jsonContainerSubtitle').text("To make deletions permanent for everyone, copy this entire block and replace the contents of your data.json file with it.");
+        addMemberForm.hide();
+        
+        $('#jsonOutput').text(JSON.stringify(finalData, null, 2));
+        jsonOutputContainer.removeClass('hidden');
+        openDataModal();
+      });
+
+      $('#closeDataModal').on('click', closeDataModal);
+
+      addMemberForm.on('submit', function(e) {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+          const newMember = {};
+          const name = formData.get('name');
+          const dob = formData.get('dob');
+          newMember.id = `${name.replace(/\s+/g, '-').toLowerCase()}-${dob}`;
+          newMember.Date = moment().format('DD-MM-YYYY');
+          for (let [key, value] of formData.entries()) {
+              newMember[key] = value || "";
+          }
+          $('#jsonOutput').text(JSON.stringify(newMember, null, 2));
+          jsonOutputContainer.removeClass('hidden');
+      });
+
+      $('#copyJsonBtn').on('click', function() {
+          const jsonText = $('#jsonOutput').text();
+          navigator.clipboard.writeText(jsonText).then(() => {
+              $(this).text('Copied!');
+              setTimeout(() => $(this).text('Copy'), 2000);
+          });
+      });
+    });
+  </script>
+</body>
+</html>
