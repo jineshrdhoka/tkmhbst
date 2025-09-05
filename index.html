@@ -5,15 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TKM HBST Volunteers</title>
   
-  <!-- Tailwind CSS for modern styling -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- DataTables CSS for table functionality -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"/>
 
@@ -113,7 +110,6 @@
     </div>
   </div>
 
-  <!-- Delete Confirmation Modal -->
   <div id="deleteModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 hidden">
     <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
       <div class="mt-3 text-center">
@@ -132,7 +128,6 @@
     </div>
   </div>
 
-  <!-- Add/Export Modals -->
   <div id="dataModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 hidden">
     <div class="relative top-10 mx-auto p-5 border w-full max-w-2xl shadow-lg rounded-md bg-white">
         <div class="flex justify-between items-center pb-3 border-b">
@@ -142,7 +137,6 @@
             </div>
         </div>
         
-        <!-- Add Member Form -->
         <form id="addMemberForm" class="mt-4 space-y-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" name="name" placeholder="Full Name*" required>
@@ -171,19 +165,24 @@
             </div>
         </form>
         
-        <!-- JSON Output Area -->
         <div id="jsonOutputContainer" class="hidden mt-6">
             <h4 id="jsonContainerTitle" class="font-bold text-lg">Generated JSON</h4>
             <p id="jsonContainerSubtitle" class="text-sm text-gray-600 mb-2">Instructions go here.</p>
             <div class="relative">
                 <pre id="jsonOutput" class="bg-gray-800 text-white p-4 rounded-lg text-sm overflow-x-auto max-h-64"></pre>
-                <button id="copyJsonBtn" class="absolute top-2 right-2 bg-gray-600 hover:bg-gray-500 text-white font-bold py-1 px-2 rounded text-xs">Copy</button>
+                <button id="copyJsonBtn" title="Copy to clipboard" class="absolute top-2 right-2 bg-slate-600 hover:bg-slate-500 text-white p-2 rounded-md transition-colors duration-200">
+                    <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                    <svg id="copied-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
 </div>
 
-  <!-- jQuery, DataTables, Moment.js -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
@@ -194,34 +193,35 @@
     $(document).ready(function () {
       $.fn.dataTable.moment('DD-MM-YYYY');
       let table;
-      let allData = [];
+      let allData = []; // This will hold the pristine, original data
 
-      // Function to get deleted IDs from localStorage
       const getDeletedIds = () => JSON.parse(localStorage.getItem('tkmDeletedIds') || '[]');
-
-      // Function to save deleted IDs to localStorage
       const saveDeletedIds = (ids) => localStorage.setItem('tkmDeletedIds', JSON.stringify(ids));
 
       $.getJSON("data.json", function (data) {
-        allData = data; // Store the original data
+        allData = data; // Store the original data. It will not be modified.
         const deletedIds = getDeletedIds();
         
-        // Filter out deleted members before processing
         const visibleData = allData.filter(item => !deletedIds.includes(item.id));
 
-        let processedData = visibleData.map((item, index) => {
-          if (!item.id) item.id = `${item.name.replace(/\s+/g, '-').toLowerCase()}-${item.dob}`;
+        // **FIXED** This map function now returns a NEW object for display purposes,
+        // leaving the original objects in `allData` untouched.
+        let processedData = visibleData.map((item) => {
           const dobParts = item.dob.split('-');
           const dobDate = new Date(dobParts[2], dobParts[1] - 1, dobParts[0]);
           const today = new Date();
           let age = today.getFullYear() - dobDate.getFullYear();
           const m = today.getMonth() - dobDate.getMonth();
           if (m < 0 || (m === 0 && today.getDate() < dobDate.getDate())) age--;
-          item.age = age;
-          item.phoneLink = `<a href="tel:${item.phone}" class="text-indigo-600 hover:underline">${item.phone}</a>`;
-          item.whatsappLink = item.whatsapp ? `<a href="https://wa.me/${item.whatsapp.replace(/\D/g,'')}" target="_blank" class="text-green-600 hover:underline">${item.whatsapp}</a>` : '';
-          item.emailLink = `<a href="mailto:${item.email}" class="text-indigo-600 hover:underline">${item.email}</a>`;
-          return item;
+          
+          // Return a new object with the original data plus display-specific properties
+          return {
+            ...item, // Spread operator copies all original properties
+            age: age,
+            phoneLink: `<a href="tel:${item.phone}" class="text-indigo-600 hover:underline">${item.phone}</a>`,
+            whatsappLink: item.whatsapp ? `<a href="https://wa.me/${item.whatsapp.replace(/\D/g,'')}" target="_blank" class="text-green-600 hover:underline">${item.whatsapp}</a>` : '',
+            emailLink: `<a href="mailto:${item.email}" class="text-indigo-600 hover:underline">${item.email}</a>`
+          };
         });
 
         function updateMemberCounts(currentData) {
@@ -314,6 +314,7 @@
       
       $('#exportDataBtn').on('click', () => {
         const deletedIds = getDeletedIds();
+        // The `allData` variable still holds the clean, original data.
         const finalData = allData.filter(item => !deletedIds.includes(item.id));
         
         $('#dataModalTitle').text('Export Updated Data');
@@ -343,11 +344,23 @@
           jsonOutputContainer.removeClass('hidden');
       });
 
+      // **IMPROVED UI** New click handler for the copy button
       $('#copyJsonBtn').on('click', function() {
           const jsonText = $('#jsonOutput').text();
+          const copyBtn = $(this);
+          const copyIcon = $('#copy-icon');
+          const copiedIcon = $('#copied-icon');
+
           navigator.clipboard.writeText(jsonText).then(() => {
-              $(this).text('Copied!');
-              setTimeout(() => $(this).text('Copy'), 2000);
+              copyIcon.addClass('hidden');
+              copiedIcon.removeClass('hidden');
+              copyBtn.removeClass('bg-slate-600 hover:bg-slate-500').addClass('bg-green-700');
+
+              setTimeout(() => {
+                  copyIcon.removeClass('hidden');
+                  copiedIcon.addClass('hidden');
+                  copyBtn.removeClass('bg-green-700').addClass('bg-slate-600 hover:bg-slate-500');
+              }, 2000);
           });
       });
     });
